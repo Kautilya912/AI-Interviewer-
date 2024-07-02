@@ -3,16 +3,16 @@ from dataclasses import dataclass
 import streamlit as st
 from speech_recognition.openai_whisper import save_wav_file, transcribe
 from audio_recorder_streamlit import audio_recorder
-from langchain.callbacks import get_openai_callback
-from langchain.chat_models import ChatOpenAI
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import RetrievalQA, ConversationChain
+from langchain_community.callbacks import get_openai_callback
+from langchain_community.chat_models import ChatOpenAI
+from langchain_community.memory import ConversationBufferMemory
+from langchain_community.chains import RetrievalQA, ConversationChain
 from langchain.prompts.prompt import PromptTemplate
 from prompts.prompts import templates
 from typing import Literal
 from aws.synthesize_speech import synthesize_speech
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
+from langchain_community.vectorstores import FAISS
 from langchain.text_splitter import NLTKTextSplitter
 from PyPDF2 import PdfReader
 from prompts.prompt_selector import prompt_sector
