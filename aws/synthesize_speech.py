@@ -8,8 +8,8 @@ from tempfile import gettempdir
 from langchain_community.callbacks.manager import get_openai_callback
 
 Session = boto3.Session(
-        aws_access_key_id = st.secrets['AKIA3FLD6MSRXZWE4ID7'],
-        aws_secret_access_key = st.secrets['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'],
+        aws_access_key_id = st.secrets['aws_access_key_id'],
+        aws_secret_access_key = st.secrets['aws_secret_access_key'],
       ##  region_name = "us-east-1"
     )
 
