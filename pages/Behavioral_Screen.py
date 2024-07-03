@@ -5,7 +5,7 @@ from dataclasses import dataclass
 import json
 import base64
 from langchain.memory import ConversationBufferMemory
-from langchain_community.callbacks.manager import get_openai_callback
+from langchain.callbacks.manager import get_openai_callback
 from langchain_community.chat_models import ChatOpenAI
 from langchain_community.chains import ConversationChain, RetrievalQA
 from langchain.prompts.prompt import PromptTemplate
