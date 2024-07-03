@@ -4,11 +4,7 @@ from typing import Literal
 from dataclasses import dataclass
 import json
 import base64
-try:
-    from langchain_community.memory import ConversationBufferMemory
-    print("Import successful.")
-except ImportError as e:
-    print(f"Import error: {e}")
+from langchain_community.memory import ConversationBufferMemory
 from langchain_community.callbacks import get_openai_callback
 from langchain_community.chat_models import ChatOpenAI
 from langchain_community.chains import ConversationChain, RetrievalQA
