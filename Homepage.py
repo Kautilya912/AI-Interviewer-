@@ -5,29 +5,26 @@ from app_utils import switch_page
 from PIL import Image
 
 im = Image.open("icon.png")
-st.set_page_config(page_title = "AI Interviewer", layout = "centered",page_icon=im)
+st.set_page_config(page_title = "AI Podcast Interviewer", layout = "centered",page_icon=im)
 
 lan = st.selectbox("#### Language", ["English", "中文"])
 
 if lan == "English":
-    home_title = "AI Interviewer"
-    home_introduction = "Welcome to AI Interviewer, empowering your interview preparation with generative AI."
+    home_title = "AI Podcast Interviewer"
+    home_introduction = "Welcome to  intelligent Podcast Interviewer, empowering your Podcaste with generative AI."
     with st.sidebar:
         st.markdown('AI Interviewer - V0.1.2')
         st.markdown(""" 
         #### Let's contact:
-        [Haoxiang Jia](https://www.linkedin.com/in/haoxiang-jia/)
+        [Kautilya Utkarsh](https://www.linkedin.com/in/kautilya-utkarsh-mishra-187818265/)
         
-        [Zicheng Wang](https://www.linkedin.com/in/todd-wang-5001aa264/)
-        #### Please fill the form, we'd love to have your feedback:
-        [Feedback Form](https://docs.google.com/forms/d/13f4q03bk4lD7sKR7qZ8UM1lQDo6NhRaAKv7uIeXHEaQ/edit)
+        [At C# Corner ](https://www.c-sharpcorner.com/members/kautilya-utkarsh)
+    
     
         #### Powered by
     
         [OpenAI](https://openai.com/)
-    
-        [FAISS](https://github.com/facebookresearch/faiss)
-    
+              
         [Langchain](https://github.com/hwchase17/langchain)
     
                     """)
@@ -39,8 +36,8 @@ if lan == "English":
     st.markdown(f"""# {home_title} <span style=color:#2E9BF5><font size=5>Beta</font></span>""",unsafe_allow_html=True)
     st.markdown("""\n""")
     #st.markdown("#### Greetings")
-    st.markdown("Welcome to AI Interviewer! 👏 AI Interviewer is your personal interviewer powered by generative AI that conducts mock interviews."
-                "You can upload your resume and enter job descriptions, and AI Interviewer will ask you customized questions. Additionally, you can configure your own Interviewer!")
+    st.markdown("Welcome to AI Podcast Interviewer! 👏 AI Podcast Interviewer is your personal podcaste interviewer powered by generative AI that conducts Podcaste."
+                "You can upload your resume and enter job descriptions, and AI Podcaste Interviewer will ask you customized questions. Additionally, you can configure your own Podcast Interviewer!")
     st.markdown("""\n""")
     with st.expander("Updates"):
         st.write("""
@@ -61,7 +58,7 @@ if lan == "English":
         )
     if selected == 'Professional':
         st.info("""
-            📚In this session, the AI Interviewer will assess your technical skills as they relate to the job description.
+            📚In this session, the AI Podcaste Interviewer will assess your technical skills as they relate to the proived description.
             Note: The maximum length of your answer is 4097 tokens!
             - Each Interview will take 10 to 15 mins.
             - To start a new session, just refresh the page.
@@ -71,7 +68,7 @@ if lan == "English":
             switch_page("Professional Screen")
     if selected == 'Resume':
         st.info("""
-        📚In this session, the AI Interviewer will review your resume and discuss your past experiences.
+        📚In this session, the AI Podcaste Interviewer will review your resume and discuss your past experiences.
         Note: The maximum length of your answer is 4097 tokens!
         - Each Interview will take 10 to 15 mins.
         - To start a new session, just refresh the page.
@@ -82,7 +79,7 @@ if lan == "English":
             switch_page("Resume Screen")
     if selected == 'Behavioral':
         st.info("""
-        📚In this session, the AI Interviewer will assess your soft skills as they relate to the job description.
+        📚In this session, the AI Podcaste Interviewer will assess your soft skills as they relate to the job description.
         Note: The maximum length of your answer is 4097 tokens!
         - Each Interview will take 10 to 15 mins.
         - To start a new session, just refresh the page.
@@ -93,7 +90,7 @@ if lan == "English":
             switch_page("Behavioral Screen")
     if selected == 'Customize!':
         st.info("""
-            📚In this session, you can customize your own AI Interviewer and practice with it!
+            📚In this session, you can customize your own AI Podcaste Interviewer and practice with it!
              - Configure AI Interviewer in different specialties.
              - Configure AI Interviewer in different personalities.
              - Different tones of voice.

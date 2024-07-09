@@ -13,31 +13,31 @@ from langchain.text_splitter import NLTKTextSplitter
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 import nltk
-from prompts.prompts import templates
+from prompts.prompts import templates 
 # Audio
-from speech_recognition.openai_whisper import save_wav_file, transcribe
-from audio_recorder_streamlit import audio_recorder
-from aws.synthesize_speech import synthesize_speech
-from IPython.display import Audio
+from speech_recognition.openai_whisper import save_wav_file, transcribe 
+from audio_recorder_streamlit import audio_recorder 
+from aws.synthesize_speech import synthesize_speech 
+from IPython.display import Audio 
 
-def load_lottiefile(filepath: str):
+def load_lottiefile(filepath: str): 
 
-    '''Load lottie animation file'''
+    '''Load lottie animation file''' 
 
-    with open(filepath, "r") as f:
-        return json.load(f)
+    with open(filepath, "r") as f: 
+        return json.load(f) 
 
-st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=True, quality="high", height=300)
+st_lottie(load_lottiefile("images/welcome.json"), speed=1, reverse=False, loop=True, quality="high", height=300) 
 
-#st.markdown("""solutions to potential errors:""")
-with st.expander("""Why did I encounter errors when I tried to talk to the AI Interviewer?"""):
-    st.write("""
-    This is because the app failed to record. Make sure that your microphone is connected and that you have given permission to the browser to access your microphone.""")
+#st.markdown("""solutions to potential errors:""") 
+with st.expander("""Why did I encounter errors when I tried to talk to the AI Interviewer?"""): 
+    st.write(""" 
+    This is because the app failed to record. Make sure that your microphone is connected and that you have given permission to the browser to access your microphone.""") 
 
-st.markdown("""\n""")
-jd = st.text_area("""Please enter the job description here (If you don't have one, enter keywords, such as "communication" or "teamwork" instead): """)
-auto_play = st.checkbox("Let AI interviewer speak! (Please don't switch during the interview)")
-#st.toast("4097 tokens is roughly equivalent to around 800 to 1000 words or 3 minutes of speech. Please keep your answer within this limit.")
+st.markdown("""\n""") 
+jd = st.text_area("""Please enter the job description here (If you don't have one, enter keywords, such as "communication" or "teamwork" instead): """) 
+auto_play = st.checkbox("Let AI interviewer speak! (Please don't switch during the interview)") 
+#st.toast("4097 tokens is roughly equivalent to around 800 to 1000 words or 3 minutes of speech. Please keep your answer within this limit.") 
 
 @dataclass
 class Message:
@@ -49,7 +49,7 @@ def autoplay_audio(file_path: str):
     '''Play audio automatically'''
     def update_audio():
         global global_audio_md
-        with open(file_path, "rb") as f:
+        with open(file_path, "rb") as f: 
             data = f.read()
             b64 = base64.b64encode(data).decode()
             global_audio_md = f"""
