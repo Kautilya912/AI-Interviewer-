@@ -7,7 +7,7 @@ from PIL import Image
 im = Image.open("icon.png")
 st.set_page_config(page_title = "AI Podcast Interviewer", layout = "centered",page_icon=im)
 
-lan = st.selectbox("#### Language", ["English", "中文"])
+lan = st.selectbox("#### Language", ["English", "Comming Soon!"])
 
 if lan == "English":
     home_title = "AI Podcast Interviewer"
@@ -19,19 +19,18 @@ if lan == "English":
         [Kautilya Utkarsh](https://www.linkedin.com/in/kautilya-utkarsh-mishra-187818265/)
         
         [At C# Corner ](https://www.c-sharpcorner.com/members/kautilya-utkarsh)
-    
-    
+                         
+        
+        #### Product of
+
+        [CSharp Corner](https://www.c-sharpcorner.com/)
+                    
+        
         #### Powered by
     
         [OpenAI](https://openai.com/)
               
         [Langchain](https://github.com/hwchase17/langchain)
-    
-                    
-        
-        #### Product of
-
-        [CSharp Corner](https://www.c-sharpcorner.com/)
             
                     """)  
     st.markdown(
@@ -104,7 +103,7 @@ if lan == "English":
              Coming at the end of July""")
     st.markdown("""\n""")
     st.markdown("#### Kautilya Utkarsh")
-    st.write('[Click here to view common FAQs, future updates and more!](https://jiatastic.notion.site/wiki-8d962051e57a48ccb304e920afa0c6a8?pvs=4)')
+  #  st.write('[Click here to view common FAQs, future updates and more!](https://jiatastic.notion.site/wiki-8d962051e57a48ccb304e920afa0c6a8?pvs=4)')
     #st.write(
     #        f'<iframe src="https://17nxkr0j95z3vy.embednotionpage.com/AI-Interviewer-Wiki-8d962051e57a48ccb304e920afa0c6a8" style="width:100%; height:100%; min-height:500px; border:0; padding:0;"/>',
     #        unsafe_allow_html=True,
