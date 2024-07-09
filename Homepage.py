@@ -4,7 +4,7 @@ from app_utils import switch_page
 #import streamlit as st
 from PIL import Image
 
-im = Image.open("icon.png")
+im = Image.open("icon.jpg")
 st.set_page_config(page_title = "AI Podcast Interviewer", layout = "centered",page_icon=im)
 
 lan = st.selectbox("#### Language", ["English", "中文"])
