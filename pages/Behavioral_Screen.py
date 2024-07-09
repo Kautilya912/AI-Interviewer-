@@ -5,13 +5,13 @@ from dataclasses import dataclass
 import json
 import base64
 from langchain.memory import ConversationBufferMemory
-from langchain_community.callbacks.manager import get_openai_callback
-from langchain_community.chat_models import ChatOpenAI
-from langchain_community.chains import ConversationChain, RetrievalQA
+from langchain.callbacks.manager import get_openai_callback
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import ConversationChain, RetrievalQA
 from langchain.prompts.prompt import PromptTemplate
 from langchain.text_splitter import NLTKTextSplitter
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.vectorstores import FAISS
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
 import nltk
 from prompts.prompts import templates 
 # Audio
@@ -36,7 +36,7 @@ with st.expander("""Why did I encounter errors when I tried to talk to the AI In
 
 st.markdown("""\n""") 
 jd = st.text_area("""Please enter the job description here (If you don't have one, enter keywords, such as "communication" or "teamwork" instead): """) 
-auto_play = st.checkbox("Let AI Podcast interviewer speak! (Please don't switch during the podcaste)") 
+auto_play = st.checkbox("Let AI Podcast interviewer speak! (Please don't switch during the )") 
 #st.toast("4097 tokens is roughly equivalent to around 800 to 1000 words or 3 minutes of speech. Please keep your answer within this limit.") 
 
 @dataclass
