@@ -1,8 +1,6 @@
 langchain-community
-langchain_community
 langchain
 langchain_core
-langchain-core
 PyPDF2
 openai
 wave
