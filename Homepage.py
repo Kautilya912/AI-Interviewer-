@@ -41,8 +41,8 @@ if lan == "English":
     st.markdown("""\n""")
     with st.expander("Updates"):
         st.write("""
-        08/13/2023
-        - Fix the error that occurs when the user input fails to be recorded. """)
+        07/10/2024
+        - Fix the error that was occuring on the home page """)
     with st.expander("What's coming next?"):
         st.write("""
         Improved voice interaction for a seamless experience. """)
