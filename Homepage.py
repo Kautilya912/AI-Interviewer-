@@ -13,7 +13,7 @@ if lan == "English":
     home_title = "AI Podcast Interviewer"
     home_introduction = "Welcome to  intelligent Podcast Interviewer, empowering your Podcaste with generative AI."
     with st.sidebar:
-        st.markdown('AI Interviewer - V0.1.2')
+        st.markdown('AI Podcaste Interviewer - V0.1.2')
         st.markdown(""" 
         #### Let's contact:
         [Kautilya Utkarsh](https://www.linkedin.com/in/kautilya-utkarsh-mishra-187818265/)
